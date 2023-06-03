@@ -1,0 +1,55 @@
+.authorization {
+  padding: 40px 180px;
+  h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .authorization-content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 60px 170px 60px;
+    background: #d9d9d9;
+    .text-input {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+      }
+      input {
+        all: unset;
+        background: #ffffff;
+        padding: 12px 6px;
+        width: 70%;
+        font-size: 28px;
+        margin-top: 34px;
+      }
+    }
+  }
+  &-error {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 16px;
+    color: red;
+  }
+  &-links {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,121 @@
+.text-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  input {
+    all: unset;
+    background: #ffffff;
+    padding: 12px 6px;
+    width: 70%;
+    font-size: 28px;
+    margin-top: 34px;
+  }
+}
+.filter {
+  &-content {
+    &__params {
+      background: #d4d4d4;
+      padding: 0 34px 34px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+        p {
+          font-size: 16px;
+          color: red;
+        }
+      }
+    }
+    &__inner {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 500px;
+      padding: 38px;
+      gap: 46px;
+      background: #f1f1f1;
+      margin-top: 20px;
+      &-block {
+        background: #d9d9d9;
+        --g: 4px; /* the gap */
+        --b: 4px; /* border thickness*/
+        --c: grey; /* the color */
+        padding: calc(var(--g) + var(--b));
+        --_c: #0000 0 25%, var(--c) 0 50%;
+        --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+        --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+        background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+          var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+        background-size: 200% var(--b), var(--b) 200%;
+        cursor: pointer;
+        filter: grayscale(50%);
+        transition: 0.3s;
+        &:hover {
+          --_p: 75%;
+          filter: grayscale(0%);
+          opacity: 0.8;
+        }
+        &__image {
+          height: 300px;
+          overflow: hidden;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          border-bottom: 1px solid #000;
+          background: #ffffff;
+          img {
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+        &__content {
+          height: 200px;
+          padding: 30px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+          }
+          &-price {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            h2 {
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 48px;
+            }
+            p {
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 39px;
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

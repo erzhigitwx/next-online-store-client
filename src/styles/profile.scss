@@ -1,0 +1,26 @@
+.profile-content {
+  &__inner {
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 34px;
+    background: #d9d9d9;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+  }
+}
