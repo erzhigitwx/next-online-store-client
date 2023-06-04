@@ -22,8 +22,8 @@ const HomeContent = ({ orders }) => {
                 className="mySwiper"
             >
                 {ordersArray?.map((order) => (
-                    <SwiperSlide>
-                        <Link href={`${order.category}/${order.orderId}`} key={order.orderId}>
+                    <SwiperSlide key={order.orderId}>
+                        <Link href={`${order.category}/${order.orderId}`}>
                             <div className="home-content__wrapper" onClick={(e) => e.stopPropagation()}>
                                 <OrderItem order={order} />
                             </div>

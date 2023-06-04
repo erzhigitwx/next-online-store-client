@@ -44,7 +44,7 @@ const LoginContent = () => {
                 {isInvalid && <div className='login-error'>there is no such user or the data was entered incorrectly</div>}
                 <div className="login-links">
                     <Link href={"/authorization"}>
-                        I haven't an account
+                        I haven&apos;t an account
                     </Link>
                     <Button text={"log in"} onSubmit={(e) => handlerSubmit(e)} />
                 </div>
