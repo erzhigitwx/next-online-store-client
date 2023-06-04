@@ -177,6 +177,9 @@ input[type="number"] {
   }
 }
 @media screen and (max-width: 1300px) {
+  body{
+    min-height: 200vh;
+  }
   .page {
     padding: 30px 20px;
     gap: 40px;

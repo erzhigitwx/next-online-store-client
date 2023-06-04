@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "../../../styles/login.scss"
 import TextInput from '../auth/TextInput'
 import { useDispatch, useSelector } from 'react-redux'
@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Button from '@/components/Button'
 import { getData } from '@/utils/getData'
 import { useRouter } from 'next/router'
+
 
 const LoginContent = () => {
     const dispatch = useDispatch();

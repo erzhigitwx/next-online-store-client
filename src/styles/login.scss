@@ -53,3 +53,12 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 1300px) {
+  body {
+    min-width: 1145px;
+    min-height: 200vh;
+  }
+  .login{
+    padding: 40px 80px;
+  }
+}
